@@ -2,7 +2,7 @@ import operator
 
 word_count = {}
 words = []
-with open('word_search.tsv') as datafile: 					#opening the tab sepearted value file
+with open('search_word.tsv') as datafile: 					#opening the tab sepearted value file
 	for row in datafile:
 		word, frequency = row.split('\t') 			#splitting it into word and occurence
 		word_count[word] = int(frequency.strip())	#inserting into the wordcount dictionary key as word and value as frequency
